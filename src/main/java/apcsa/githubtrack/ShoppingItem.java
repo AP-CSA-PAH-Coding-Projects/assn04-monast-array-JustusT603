@@ -25,7 +25,7 @@ public class ShoppingItem implements MyList
     }
 
     public double getPrice()
-    {
+    {=
         // This method has to return the price in dollars when it is accessed outside the class.
         // The amount in dollars is equivalent to the number of pennies divided by 100.
         double dollarsPrice = this.penniesPrice / 100.0;

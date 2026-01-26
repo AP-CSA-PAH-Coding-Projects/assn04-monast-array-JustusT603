@@ -49,5 +49,23 @@ public class ShoppingCart
     }
 
     // Required behaviors/methods
-    
+
+    // returns true only if ALL the items in the groceriesList are bought.
+    public boolean isCompleted()
+    {
+        if (for (ShoppingItem item: this.groceriesList.getShoppingItems())
+        {
+            item.getSold() = true;
+        })
+        {
+            return true;
+        }
+        return false;
+    }
+
+    // This method returns a cart under certain conditions
+    public void returnCart()
+    {
+        // increments cartsReturned IF ... 
+    }
 }
