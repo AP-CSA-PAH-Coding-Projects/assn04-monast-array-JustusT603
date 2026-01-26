@@ -233,7 +233,19 @@ public class ShoppingList implements MyList
         /* Returns `true` only if:
         This list is the same size as other
         This list contains the same items as other (order does NOT matter) */
-        if (this.size == other.getSize() &&
+        if (this.size == other.getSize() && 
+        for (int i=0; i<this.storage.size(); i++) // for every item in storage
+        {
+            for(int j=i; j<other.size(); j++) // compare it to the items in other
+            {
+                // as soon as you encounter two items that are not the same, return false.
+                if (this.storage[i] != other[j]) 
+                {
+                    return false;
+                }
+                return true;
+            }
+        }
         )
         {
             return true;
