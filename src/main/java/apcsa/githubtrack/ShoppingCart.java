@@ -66,6 +66,10 @@ public class ShoppingCart
     // This method returns a cart under certain conditions
     public void returnCart()
     {
-        // increments cartsReturned IF ... 
+        // increments cartsReturned IF ... the associated shopping list has been completed
+        if (ShoppingCart.isCompleted())
+        {
+            this.cartsReturned++;
+        }
     }
 }
